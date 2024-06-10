@@ -1,0 +1,196 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_priceFeedA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_priceFeedB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_swapPercent",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amountA",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amountB",
+						"type": "uint256"
+					}
+				],
+				"name": "Swap",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountA",
+						"type": "uint256"
+					}
+				],
+				"name": "swap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "swapPercent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenA",
+				"outputs": [
+					{
+						"internalType": "contract ICustomERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenADecimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenB",
+				"outputs": [
+					{
+						"internalType": "contract ICustomERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenBDecimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Swap.sol": "TokenSwap"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Swap.sol": {
+			"keccak256": "0xce99543df3a9961ebcb2d357e41175cc496fea1126581409215e26f81b4cb80d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://78e894e2dc28e5ad535120ca21c5933169ee3eeeee485b18b5af4c4f73037c25",
+				"dweb:/ipfs/QmVZ1cnmGWg6HZXf2GUFJYcvfUgYour28njXciqZN2yqEQ"
+			]
+		},
+		"contracts/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x016bcacd393b631cd07e520d6773c630950797ab4cd07fb5924e8139f80c89f7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d0b8d27f73727d505ab7de2df864c75ba0029929e90677673f2c5fd385679a08",
+				"dweb:/ipfs/QmWi3oVRz2nWVqofBrWCuHMZSgRDwhy2s57DieDmU2hG3A"
+			]
+		},
+		"contracts/interfaces/ICustomERC20.sol": {
+			"keccak256": "0x2504fb20c9621507b54e8a60811b9e9fcaa62ea2b1a8d0049d4a7fb4bb128292",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba7312462ccc88c1750827c9910c495ee3c8d7769f5cf305acdd696ca5ae8da7",
+				"dweb:/ipfs/QmWzC9cADs32kKXAZpZDuktPpCyuBkRRineC1VXec8Nuwu"
+			]
+		}
+	},
+	"version": 1
+}
