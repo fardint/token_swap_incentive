@@ -9,6 +9,6 @@ npx hardhat compile
 
 npx hardhat test
 
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+npx hardhat ignition deploy ./ignition/modules/CustomToken.ts
 
 ```
